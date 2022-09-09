@@ -3,7 +3,7 @@
 
 /**
  * main - This function prints all single numbers in base 10
-*/
+ */
 int main(void)
 {
 	char num;

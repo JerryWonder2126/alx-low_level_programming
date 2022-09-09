@@ -3,7 +3,7 @@
 
 /**
  * main - This function prints all letters in lowercase
-*/
+ */
 int main(void)
 {
 	char letter;
