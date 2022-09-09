@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	char letter;
+        char letter, ltr;
 	letter = 'a';
 
 	while (letter <= 'z')
@@ -17,12 +17,12 @@ int main(void)
 		letter++;
 	}
 
-	letter = 'A';
+	ltr = 'A';
 
-	while (letter <= 'Z')
+	while (ltr <= 'Z')
 	{
-		putchar(letter);
-		letter++;
+		putchar(ltr);
+		ltr++;
 	}
 
 	putchar('\n');
