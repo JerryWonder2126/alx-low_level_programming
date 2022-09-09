@@ -9,6 +9,7 @@
 int main(void)
 {
         char letter, ltr;
+
 	letter = 'a';
 
 	while (letter <= 'z')
