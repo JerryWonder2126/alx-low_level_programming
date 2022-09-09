@@ -14,7 +14,7 @@ int main(void)
 	num = 0;
 	while (num <= 9)
 	{
-	        putchar(num + '0');
+		putchar(num + '0');
 		num++;
 	}
 
@@ -22,7 +22,7 @@ int main(void)
 
 	while (letter <= 'f')
 	{
-                putchar(letter);
+		putchar(letter);
 		letter++;
 	}
 
