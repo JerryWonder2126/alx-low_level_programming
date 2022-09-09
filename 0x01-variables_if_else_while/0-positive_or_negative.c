@@ -4,6 +4,8 @@
 
 /**
  * main - This function states if integer n is zero, positive or negative.
+
+ Return: Always 0.
  */
 int main(void)
 {
@@ -19,5 +21,5 @@ int main(void)
 	else
 		printf("%d is zero\n", n);
 
-	return (1);
+	return (0);
 }
