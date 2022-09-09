@@ -2,7 +2,9 @@
 #include <stdio.h>
 
 /**
- * main - This function prints all letters in lowercase
+ * main - This function prints all letters in lowercase except q and e
+ *
+ * Return: Always 0.
  */
 int main(void)
 {

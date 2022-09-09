@@ -5,6 +5,8 @@
 /**
  * main - This function states if the last digit of n is zero
  * less than 6 or greater than 5
+ *
+ * Return: Always 0.
  */
 int main(void)
 {

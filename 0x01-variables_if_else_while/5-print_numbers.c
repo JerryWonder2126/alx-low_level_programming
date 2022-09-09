@@ -2,7 +2,9 @@
 #include <stdio.h>
 
 /**
- * main - This function prints all single numbers in base 10
+ * main - This function prints all single digit numbers in base 10
+ *
+ * Return: Always 0.
  */
 int main(void)
 {

@@ -3,6 +3,8 @@
 
 /**
  * main - This function prints all letters in lowercase and uppercase
+ *
+ * Return: Always 0.
  */
 int main(void)
 {

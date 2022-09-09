@@ -3,6 +3,8 @@
 
 /**
  * main - This function prints all possible mumbers in the base of 16
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
