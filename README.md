@@ -1,0 +1,1 @@
+This repo was created to profer solutions to ALX SE tasks on C on syntax, conditionals, operators, types, structures, etc.
