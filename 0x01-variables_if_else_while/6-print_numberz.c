@@ -8,10 +8,15 @@
  */
 int main(void)
 {
+        int num;
 
-	for (int num = 0; num <= 9; num++)
+        num = 0;
+  
+
+	while (num <= 9)
 	{
 		putchar(num + '0');
+		num++;
 	}
 
 	putchar('\n');
