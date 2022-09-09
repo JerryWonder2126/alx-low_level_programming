@@ -4,8 +4,8 @@
 
 /**
  * main - This function states if integer n is zero, positive or negative.
-
- Return: Always 0.
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
