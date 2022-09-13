@@ -1,0 +1,1 @@
+This folder contains solution on ALX SE tasks on writing functions in C and nested loops.
