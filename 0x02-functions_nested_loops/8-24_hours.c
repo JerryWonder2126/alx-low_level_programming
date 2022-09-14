@@ -5,19 +5,19 @@
  */
 void jack_bauer(void)
 {
-  int hrs, mins;
+	int hrs, mins;
 
-  for (hrs = 0; hrs < 24 ; hrs++)
-    {
-      for (mins = 0; mins < 60; mins++)
+	for (hrs = 0; hrs < 24 ; hrs++)
 	{
-	  print_tens(hrs);
-	  _putchar(':');
-	  print_tens(mins);
+		for (mins = 0; mins < 60; mins++)
+		{
+			print_tens(hrs);
+			_putchar(':');
+			print_tens(mins);
 
-	  _putchar('\n');
+			_putchar('\n');
+		}
 	}
-    }
 }
 
 /**
@@ -27,6 +27,6 @@ void jack_bauer(void)
  */
 void print_tens(int n)
 {
-  _putchar(n / 10 + '0');
-  _putchar(n % 10 + '0');
+	_putchar(n / 10 + '0');
+	_putchar(n % 10 + '0');
 }

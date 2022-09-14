@@ -8,26 +8,26 @@
  */
 int print_sign(int n)
 {
-  char p;
-  int retval;
-  
-  if (n == 0)
-    {
-      p = '0';
-    retval = 0;
-    }
-  else if (n > 0)
-    {
-      p = '+';
-      retval = 1;
-    }
-  else
-    {
-      p = '-';
-      retval = -1;
-    }
+	char p;
+	int retval;
 
-  _putchar(p);
+	if (n == 0)
+	{
+		p = '0';
+		retval = 0;
+	}
+	else if (n > 0)
+	{
+		p = '+';
+		retval = 1;
+	}
+	else
+	{
+		p = '-';
+		retval = -1;
+	}
 
-  return (retval);
+	_putchar(p);
+
+	return (retval);
 }
