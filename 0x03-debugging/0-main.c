@@ -9,6 +9,7 @@
 int main (void)
 {
 	int i;
+	
 	i = 99;
 	positive_or_negative(i);
 
