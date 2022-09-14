@@ -18,4 +18,5 @@ void print_to_98(int n)
 		print_to_98(--n);
 	else if (n < 98)
 		print_to_98(++n);
+	putchar('\n');
 }
