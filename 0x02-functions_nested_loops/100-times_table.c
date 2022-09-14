@@ -2,13 +2,14 @@
 
 /**
  * print_times_table - print the time table from 0 to n
+ * @n: number of multiples to print
  */
 void print_times_table(int n)
 {
+	int num, mult, prod;
+
 	if (n <= 15 && n > 0)
 	{
-		int num, mult, prod;
-
 		for (num = 0; num <= n; num++)
 		{
 			_putchar('0');
@@ -23,10 +24,6 @@ void print_times_table(int n)
 				if (prod <= 9)
 					_putchar(' ');
 				print_int(prod);
-				/*else
-					_putchar((prod / 10) + '0');
-
-				_putchar((prod % 10) + '0');*/
 			}
 			_putchar('\n');
 		}
@@ -34,11 +31,11 @@ void print_times_table(int n)
 }
 
 /**
- * print_hundreds - prints integers that are in hundreds
+ * print_int - prints integers that are in hundreds
+ * @n: integer to be printed
  */
 void print_int(int n)
 {
-	int d = n / 10;
 	if (n / 10)
 	{
 		print_int(n / 10);
