@@ -5,26 +5,43 @@
  */
 void print_times_table(int n)
 {
-	int num, mult, prod;
-
-	for (num = 0; num <= n; num++)
+	if (n <= 15 && n > 0)
 	{
-		_putchar('0');
+		int num, mult, prod;
 
-		for (mult = 1; mult <= 9; mult++)
+		for (num = 0; num <= n; num++)
 		{
-			_putchar(',');
-			_putchar(' ');
+			_putchar('0');
 
-			prod = num * mult;
-
-			if (prod <= 9)
+			for (mult = 1; mult <= n; mult++)
+			{
+				_putchar(',');
 				_putchar(' ');
-			else
-				_putchar((prod / 10) + '0');
 
-			_putchar((prod % 10) + '0');
+				prod = num * mult;
+
+				if (prod <= 9)
+					_putchar(' ');
+				print_int(prod);
+				/*else
+					_putchar((prod / 10) + '0');
+
+				_putchar((prod % 10) + '0');*/
+			}
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
+}
+
+/**
+ * print_hundreds - prints integers that are in hundreds
+ */
+void print_int(int n)
+{
+	int d = n / 10;
+	if (n / 10)
+	{
+		print_int(n / 10);
+	}
+	_putchar(n % 10 + '0');
 }
