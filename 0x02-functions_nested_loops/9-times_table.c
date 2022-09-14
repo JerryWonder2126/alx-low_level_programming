@@ -10,9 +10,9 @@ void times_table(void)
 	for (c = 0; c < 10; c++)
 	{
 		j = 0;
-		for (i = 0; i <= 10; i++)
+		for (i = 0; i < 10; i++)
 		{
-			if (j > 10)
+			if (j >= 10)
 				_putchar(j / 10 + '0');
 			_putchar(j % 10 + '0');
 			j += c;
