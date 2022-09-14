@@ -6,7 +6,7 @@
  *
  * Return: 0 always
  */
-int main (void)
+int main(void)
 {
 	long b1, b2, b3;
 	int n;
@@ -27,6 +27,8 @@ int main (void)
 			continue;
 		printf(", ");
 	}
+
+	putchar('\n');
 
 	return (0);
 }
