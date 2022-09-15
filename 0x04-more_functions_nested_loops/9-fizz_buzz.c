@@ -1,0 +1,31 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+/**
+ * main - program entry point
+ *
+ * Return: 0 always
+ */
+int main(void)
+{
+	int i;
+
+	for (i = 1; i <= 100; i++)
+	{
+		if (!(i % 3) && !(i % 5))
+			printf("FizzBuzz");
+		else if (!(i % 5))
+			printf("Buzz");
+		else if (!(i % 3))
+			printf("Fizz");
+		else
+			printf("%d", i);
+
+		if (i == 100)
+			break;
+
+		putchar(' ');
+	}
+
+	return (0);
+}
