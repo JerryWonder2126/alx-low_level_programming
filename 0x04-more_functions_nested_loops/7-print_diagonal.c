@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_line - prints '_' n times
+ * print_diagonal - prints '_' n times
  *
  * @n: number of times for '_' to be printed
  */
