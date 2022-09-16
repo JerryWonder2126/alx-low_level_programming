@@ -9,23 +9,26 @@
  */
 int main(void)
 {
-	long b1, b2, b3, sum, n;
+	unsigned int b1, b2, b3, sum;
 
 	b1 = 1;
 	b2 = 2;
 
 	sum = b2;
 
-	for (n = 2; n < 4000000; n++)
+	while (1)
 	{
+		
 		b3 = b2;
 		b2 += b1;
 		b1 = b3;
+		if (b2 > 4000000)
+			break;
 		if (b2 / 2)
 			sum += b2;
 	}
 
-	printf("%ld\n", sum);
+	printf("%d\n", sum);
 
 	return (0);
 }
