@@ -1,0 +1,14 @@
+u#include "main.h"
+#include <stdio.h>
+
+int main(void)
+{
+	int a, b, c;
+
+	a = 972;
+	b = -98;
+	c = 0;
+
+	int f = largest_number(a, b, c);
+	printf("%d\n", f);
+}
