@@ -23,14 +23,13 @@ int main(void)
 		b3 = b2;
 		b2 += b1;
 		b1 = b3;
-		printf("%u, ", b2);
-		if ((b2 < MAX_NUM) && (b2 / 2))
-			sum += b2;
-		else
+		if (b2 > MAX_NUM)
 			break;
+		if (b2 % 2 == 0)
+			sum += b2;
 	}
 
-	printf("\n%u\n", sum);
+	printf("%u\n", sum);
 
 	return (0);
 }
