@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	unsigned long long i;
+	unsigned long i;
 	int n = 2;
 
 	i = 612852475143;
