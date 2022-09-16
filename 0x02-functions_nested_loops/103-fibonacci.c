@@ -19,7 +19,7 @@ int main(void)
 	sum = b2;
 
 	while (1)
-	{	
+	{
 		b3 = b2;
 		b2 += b1;
 		b1 = b3;
