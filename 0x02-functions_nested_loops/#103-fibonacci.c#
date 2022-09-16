@@ -9,9 +9,7 @@
  */
 int main(void)
 {
-	unsigned int b1, b2, b3, sum, MAX_NUM;
-
-	MAX_NUM = 4000000;
+  unsigned int b1, b2, b3, sum, ;
 
 	b1 = 1;
 	b2 = 2;
@@ -24,13 +22,13 @@ int main(void)
 		b2 += b1;
 		b1 = b3;
 		printf("%u, ", b2);
-		if ((b2 < MAX_NUM) && (b2 / 2))
-			sum += b2;
-		else
+		if (b2 > 4000000)
 			break;
+		if (b2 / 2)
+			sum += b2;
 	}
 
-	printf("\n%u\n", sum);
+	printf("%u\n", sum);
 
 	return (0);
 }
