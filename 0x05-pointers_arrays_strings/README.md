@@ -1,0 +1,1 @@
+This folder contains solutions to ALX SE task on pointers, arrays and strings.
