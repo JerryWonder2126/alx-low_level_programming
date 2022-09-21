@@ -10,9 +10,8 @@ void puts2(char *str)
 	int cnt = 0;
 
 	do {
-		if (cnt % 2 == 0)
-			_putchar(*str);
-		cnt++;
-	} while (*str++);
+		_putchar(str[cnt]);
+		cnt += 2;
+	} while (str[cnt]);
 	_putchar('\n');
 }
