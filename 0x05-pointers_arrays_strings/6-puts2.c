@@ -9,9 +9,9 @@ void puts2(char *str)
 {
 	int cnt = 0;
 
-	do {
+	while (str[cnt]) {
 		_putchar(str[cnt]);
 		cnt += 2;
-	} while (str[cnt]);
+	}
 	_putchar('\n');
 }
