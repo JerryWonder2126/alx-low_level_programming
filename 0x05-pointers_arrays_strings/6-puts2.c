@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _puts2 - prints every other character in a string followed by newline
+ * puts2 - prints every other character in a string followed by newline
  *
  * @str: the string to be printed
  */
-void _puts2(char *str)
+void puts2(char *str)
 {
 	int cnt = 0;
 
