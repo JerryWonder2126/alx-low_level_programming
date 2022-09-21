@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * _puts_half - prints the last half of a string followed by newline
+ * puts_half - prints the last half of a string followed by newline
  *              if string length is odd prints the last n characters in string
  *              where n = (len - l) / 2
  *
  * @str: the string to be printed
  */
-void _puts_half(char *str)
+void puts_half(char *str)
 {
 	int cnt = 0;
 	int index = 0;
