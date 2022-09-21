@@ -10,9 +10,9 @@ void print_array(int *a, int n)
 {
 	int cnt = 0;
 
-	while (cnt < n) {
+	while (cnt <= n) {
 		print_number(a[cnt++]);
-		if (cnt != n - 1)
+		if (cnt != n)
 		{
 			_putchar(',');
 			_putchar(' ');
