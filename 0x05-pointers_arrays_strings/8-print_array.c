@@ -8,14 +8,16 @@
  */
 void print_array(int *a, int n)
 {
-	int cnt = 1;
+	int cnt = 0;
 
-	print_number(a[0]);
-	do {
-		_putchar(',');
-		_putchar(' ');
+	while (cnt < n) {
 		print_number(a[cnt++]);
-	} while (cnt < n);
+		if (cnt == n - 1)
+		{
+			_putchar(',');
+			_putchar(' ');
+		}
+	}
 
 	_putchar('\n');
 }
