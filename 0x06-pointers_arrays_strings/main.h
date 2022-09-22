@@ -11,6 +11,5 @@ char *string_toupper(char *);
 char *cap_string(char *);
 int is_seperator(char c);
 char *leet(char *);
-char encode(char c);
 
 #endif

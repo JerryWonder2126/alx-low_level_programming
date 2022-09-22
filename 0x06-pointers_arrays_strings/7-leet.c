@@ -9,6 +9,7 @@
  */
 char *leet(char *str)
 {
+	char encode(char c);
 	int index = 0;
 
 	while (str[index])
