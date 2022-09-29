@@ -9,4 +9,5 @@ int _sqrt_recursion(int n);
 int is_prime_number(int n);
 int _putchar(char x);
 int find_sqrt(int num, int root);
+int is_divisible(int num, int div);
 #endif
