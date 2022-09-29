@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * factorial - prints the factorial of a number
+ * _pow_recursion - prints x to the power of y
  *
  * @x: the base number
  * @y: the power
