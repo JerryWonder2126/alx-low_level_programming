@@ -12,7 +12,10 @@ int factorial(int n)
 
 	if (n < 0)
 		return (-1);
+	else if (n == 0)
+		return (1);
 
-	l = _strlen_recursion(s + 1);
-	return (l + 1);
+	l = n * factorial(n - 1);
+
+	return (l);
 }
