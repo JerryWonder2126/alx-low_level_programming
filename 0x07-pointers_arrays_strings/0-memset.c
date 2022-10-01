@@ -1,23 +1,23 @@
 #include "main.h"
 
 /**
- * _memset - add b to s in the first n bytes
+ * _memset - copy the first n bytes from src to dest
  *
- * @s: the variable to be filled
- * @b: the variable used to do the filling
+ * @dest: the variable to be filled
+ * @src: the variable used to do the filling
  * @n: amount of bytes to fill
  * Return: char always
  */
-char *_memset(char *s, char b, unsigned int n)
+char *_memset(char *dest, char *src, unsigned int n)
 {
 	unsigned int i = 0;
 
 	while (i < n)
 	{
-		s[i] = b;
+		dest[i] = src[i];
 		i++;
 	}
 
-	return (s);
+	return (dest);
 }
 
