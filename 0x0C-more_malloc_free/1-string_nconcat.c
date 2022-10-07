@@ -7,11 +7,29 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	s = malloc(size);
 
+	if (s == NULL)
+		return (NULL);
+
+	i = 0;
 	while (*s1)
 	{
 		s[i++] = *s1;
-		s++;
+		s1++;
 	}
+
+
+	for (;i <= size; i++)
+	{
+		if (i != size)
+		{
+			s[i] = *s2;
+			s2++;
+		}
+		else
+			s[i] = '\0';
+	}
+
+	return (s);
 }
 
 /**
