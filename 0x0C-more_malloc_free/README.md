@@ -1,0 +1,1 @@
+This folder contain solutions ALX SE tasks on the usage of malloc, realloc, free and calloc
