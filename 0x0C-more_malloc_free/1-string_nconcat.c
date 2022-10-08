@@ -13,56 +13,32 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *s;
-	int length, i;
+	char *concat;
+	unsigned int len = n, index;
 
 	if (s1 == NULL)
 		s1 = "";
+
 	if (s2 == NULL)
 		s2 = "";
 
-	length = lenOfArray(s1) + n + 1;
+	for (index = 0; s1[index]; index++)
+		len++;
 
-	s = malloc(sizeof(char) * length);
+	concat = malloc(sizeof(char) * (len + 1));
 
-	if (s == NULL)
+	if (concat == NULL)
 		return (NULL);
 
-	i = 0;
-	while (*s1)
-	{
-		s[i++] = *s1;
-		s1++;
-	}
+	len = 0;
 
+	for (index = 0; s1[index]; index++)
+		concat[len++] = s1[index];
 
-	for (; i <= length; i++)
-	{
-		if (i != length)
-		{
-			s[i] = *s2;
-			s2++;
-		}
-		else
-			s[i] = '\0';
-	}
+	for (index = 0; s2[index] && index < n; index++)
+		concat[len++] = s2[index];
 
-	return (s);
-}
+	concat[len] = '\0';
 
-/**
- * lenOfArray - returns the length of an array
- *
- * @array: the array to be measured
- * Return: the length of the array
- */
-int lenOfArray(char *array)
-{
-	int index = 0;
-	int length = 0;
-
-	while (array[index++])
-		length++;
-
-	return (length);
+	return (concat);
 }
