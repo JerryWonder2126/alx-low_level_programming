@@ -21,7 +21,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-	length = lenOfArray(s1) + n;
+	length = lenOfArray(s1) + n + 1;
 
 	s = malloc(sizeof(char) * length);
 
@@ -36,7 +36,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 
 
-	for (;i <= length; i++)
+	for (; i <= length; i++)
 	{
 		if (i != length)
 		{
