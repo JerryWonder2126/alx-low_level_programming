@@ -1,0 +1,1 @@
+This folder contains soltutions to ALX SE tasks on structures and typedef in C
