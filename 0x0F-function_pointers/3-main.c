@@ -12,7 +12,6 @@ int main(int argc, char **argv)
 {
 	char *op;
 	int num1, num2;
-	int (*func)(int, int);
 
 	if (argc != 4)
 	{
@@ -31,15 +30,13 @@ int main(int argc, char **argv)
 		exit(100);
 	}
 
-	func = get_op_func(op);
-
-	if (func == NULL || op[1] != '\0')
+	if (get_op_func(op) == NULL || op[1] != '\0')
 	{
 		puts("Error");
 		exit(99);
 	}
 
-	printf("%d\n", func(num1, num2));
+	printf("%d\n", get_op_func(op)(num1, num2));
 
 	return (EXIT_SUCCESS);
 }
