@@ -1,5 +1,11 @@
 #include "3-calc.h"
 
+/**
+ * get_op_func - determines what function to call based on operator given
+ *
+ * @s: the operator to be used
+ * Return: a pointer to a function that take two integers as parameters
+ */
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
@@ -15,7 +21,7 @@ int (*get_op_func(char *s))(int, int)
 	while (ops[i].op != NULL)
 	{
 		if (*(ops[i].op) == *s)
-			return ops[i].f;
+			return (ops[i].f);
 		i++;
 	}
 
