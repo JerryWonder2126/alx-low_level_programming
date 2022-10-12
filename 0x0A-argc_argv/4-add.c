@@ -10,7 +10,8 @@
  */
 int main(int __attribute__((__unused__)) argc, char **argv)
 {
-	int sum, x = 0;
+	int sum = 0;
+	int x = 0;
 	int i = 1;
 
 	while (argv[i])
