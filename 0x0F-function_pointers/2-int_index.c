@@ -10,19 +10,17 @@
  *         does not return 0. If no element matches, return -1
  *         If size <= 0, return -1
  */
-
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int i = 0;
+	int index;
 
-	if (array != NULL || cmp != NULL)
+	if (array == NULL || cmp == NULL)
+		return (-1);
+
+	for (index = 0; index < size; index++)
 	{
-		while (i < size)
-		{
-			if (cmp(array[i]) != 0)
-				return (i);
-			i++;
-		}
+		if (cmp(array[index]) != 0)
+			return (index);
 	}
 
 	return (-1);
