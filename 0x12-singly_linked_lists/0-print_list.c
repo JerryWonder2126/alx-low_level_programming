@@ -13,10 +13,20 @@ size_t print_list(const list_t *h)
 
 	while (h)
 	{
-		_putchar('[');
-		print_number(h->len ? h->len : 0);
-		print_string("] ");
-		print_string(h->str ? h->str : empty_str);
+		if (h->str == NULL)
+		{
+			_putchar('[');
+			print_number(0);
+			print_string("] ");
+			print_string(empty_str);
+		}
+		else
+		{
+			_putchar('[');
+			print_number(h->len);
+			print_string("] ");
+			print_string(h->str);
+		}
 		_putchar('\n');
 		i++;
 		h = h->next;
