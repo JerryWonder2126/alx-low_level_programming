@@ -31,7 +31,7 @@ int print_string(char *str)
 }
 
 /**
- * print_int - prints a number
+ * print_number - prints a number
  *
  * @num: the number to be printed
  * Return: the number of characters printed
