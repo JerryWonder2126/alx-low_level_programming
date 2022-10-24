@@ -9,7 +9,7 @@
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	listint_t *new;
+	listint_t *new = NULL;
 	listint_t *h = *head;
 
 	new->n = n;
@@ -26,4 +26,3 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 
 	return (new);
 }
-

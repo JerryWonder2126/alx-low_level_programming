@@ -5,15 +5,24 @@
  *
  * @head: the first node in the list
  */
-void free_listint2(listint_t *head)
+void free_listint2(listint_t **head)
 {
-	listint_t next;
+	listint_t *next, *h, *tmp;
 
-	while (head)
+	h = *head;
+
+	if (h != NULL)
 	{
-		next = head->next;
-		free(head);
-		head = next;
+
+		next = h->next;
+
+		while (next)
+		{
+			tmp = next->next;
+			free(next);
+			next = tmp;
+		}
+
+		h = NULL;
 	}
 }
-
