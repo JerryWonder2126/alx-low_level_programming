@@ -1,5 +1,4 @@
 #include "lists.h"
-#include <unistd.h>
 
 /**
  * _putchar - prints a character to screen
