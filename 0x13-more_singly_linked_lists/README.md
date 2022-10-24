@@ -1,0 +1,1 @@
+This folder contains solutions to ALX SE tasks on singly linked lists in C.
