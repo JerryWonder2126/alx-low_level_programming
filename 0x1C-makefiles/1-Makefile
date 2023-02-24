@@ -2,5 +2,4 @@ CC := gcc
 SRC := $(wildcard *.c)
 
 all: $(SRC)
-	echo $(SRC)
-	gcc m.h $(SRC) -o school
+	$(SRC) m.h $(SRC) -o school
