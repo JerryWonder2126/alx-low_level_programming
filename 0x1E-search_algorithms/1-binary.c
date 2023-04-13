@@ -52,6 +52,8 @@ void print_array(int *array, size_t start, size_t end)
 {
 	size_t i = start;
 
+	printf("Searching in array: ");
+
 	while (i < end - 1)
 		printf("%d, ", array[i++]);
 	printf("%d\n", array[i]);
